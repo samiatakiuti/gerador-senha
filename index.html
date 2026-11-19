@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Senhas</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Gerador de Senhas</h1>
+
+        <p>Crie uma senha personalizada</p>
+        
+        <div class="campo-senha">
+            <input type="text" id="senha" placeholder="Sua senha aparecerá aqui" readonly>
+        </div>
+        <div class="configuracoes">
+
+            <label for="tamanho">Tamanho da senha:</label>
+
+            <input type="number" id="tamanho" value="12" min="1" max="50">
+
+        </div>
+        <div class="opcoes">
+
+            <h3>Personalize sua senha:</h3>
+
+            <div class="opcao">
+                <input type="checkbox" id="maiusculas" checked>
+                <label for="maiusculas">Letras maiúsculas (A-Z)</label>
+            </div>
+
+            <div class="opcao">
+                <input type="checkbox" id="minusculas" checked>
+                <label for="minusculas">Letras minúsculas (a-z)</label>
+            </div>
+
+            <div class="opcao">
+                <input type="checkbox" id="numeros" checked>
+                <label for="numeros">Números (0-9)</label>
+            </div>
+
+            <div class="opcao">
+                <input type="checkbox" id="especiais">
+                <label for="especiais">Caracteres especiais (!@#$%)</label>
+            </div>
+
+        </div>
+        <div class="botoes">
+
+            <button id="gerar">Gerar senha</button>
+
+            <button id="limpar">Limpar</button>
+
+        </div>
+
+        <p id="mensagem"></p>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
